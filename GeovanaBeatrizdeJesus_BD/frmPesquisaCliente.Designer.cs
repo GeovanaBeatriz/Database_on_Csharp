@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rdbCPF = new System.Windows.Forms.RadioButton();
             this.rdbNome = new System.Windows.Forms.RadioButton();
+            this.rdbCPF = new System.Windows.Forms.RadioButton();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtPesquisa = new System.Windows.Forms.TextBox();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
             this.btnOK = new System.Windows.Forms.Button();
@@ -52,15 +52,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Critério de busca";
             // 
-            // groupBox2
+            // rdbNome
             // 
-            this.groupBox2.Controls.Add(this.txtPesquisa);
-            this.groupBox2.Location = new System.Drawing.Point(324, 36);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(375, 77);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Informe o nome ou o CPF do cliente";
+            this.rdbNome.AutoSize = true;
+            this.rdbNome.Location = new System.Drawing.Point(104, 35);
+            this.rdbNome.Name = "rdbNome";
+            this.rdbNome.Size = new System.Drawing.Size(103, 17);
+            this.rdbNome.TabIndex = 1;
+            this.rdbNome.TabStop = true;
+            this.rdbNome.Text = "Nome do Cliente";
+            this.rdbNome.UseVisualStyleBackColor = true;
             // 
             // rdbCPF
             // 
@@ -73,16 +74,15 @@
             this.rdbCPF.Text = "CPF";
             this.rdbCPF.UseVisualStyleBackColor = true;
             // 
-            // rdbNome
+            // groupBox2
             // 
-            this.rdbNome.AutoSize = true;
-            this.rdbNome.Location = new System.Drawing.Point(104, 35);
-            this.rdbNome.Name = "rdbNome";
-            this.rdbNome.Size = new System.Drawing.Size(103, 17);
-            this.rdbNome.TabIndex = 1;
-            this.rdbNome.TabStop = true;
-            this.rdbNome.Text = "Nome do Cliente";
-            this.rdbNome.UseVisualStyleBackColor = true;
+            this.groupBox2.Controls.Add(this.txtPesquisa);
+            this.groupBox2.Location = new System.Drawing.Point(324, 36);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(375, 77);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Informe o nome ou o CPF do cliente";
             // 
             // txtPesquisa
             // 
@@ -107,6 +107,7 @@
             this.btnOK.TabIndex = 3;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnCancelar
             // 

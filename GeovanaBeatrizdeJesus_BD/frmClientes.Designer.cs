@@ -51,7 +51,7 @@
             this.label1.Size = new System.Drawing.Size(30, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "CPF:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+           
             // 
             // mskCPF
             // 
@@ -158,6 +158,7 @@
             this.btnPesquisar.TabIndex = 12;
             this.btnPesquisar.Text = "...";
             this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // frmClientes
             // 

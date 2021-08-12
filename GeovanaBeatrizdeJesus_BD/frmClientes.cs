@@ -17,9 +17,15 @@ namespace GeovanaBeatrizdeJesus_BD
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
+   
 
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            frmPesquisaCliente frmPesqCli = new frmPesquisaCliente(this);// Cria uma instância do formulário 
+            //Pesquisa cliente
+            frmPesqCli.ShowDialog(this); //Exibe o formulário Pesquisa Cliente em forma modal, ou seja, 
+            //os formulários que ficarem por trás deste somente serão acessíveis quando o formulário
+            //pesquisa for fechado.
         }
     }
 }

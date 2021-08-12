@@ -12,9 +12,22 @@ namespace GeovanaBeatrizdeJesus_BD
 {
     public partial class frmPesquisaCliente : Form
     {
+
+        frmClientes frmCli;
         public frmPesquisaCliente()
         {
             InitializeComponent();
+        }
+
+        public frmPesquisaCliente(frmClientes formularioClientes)
+        {
+            InitializeComponent();
+            frmCli = formularioClientes;
+        }
+
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

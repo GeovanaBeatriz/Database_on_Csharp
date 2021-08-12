@@ -16,5 +16,13 @@ namespace GeovanaBeatrizdeJesus_BD
         {
             InitializeComponent();
         }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmClientes frmCli = new frmClientes(); //Criando instância do formulário Clientes
+            frmCli.MdiParent = this; //Esta linha define que o formulário cliente é 'filho' do formulário
+            //principal e portanto, deverá abrir dentro dele
+            frmCli.Show(); //exibe o formulário cliente
+        }
     }
 }
