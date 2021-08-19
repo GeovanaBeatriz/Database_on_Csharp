@@ -50,7 +50,7 @@ namespace GeovanaBeatrizdeJesus_BD
         {
             try
             {
-                if(rdbCPF.Checked = true)
+                if(rdbCPF.Checked == true)
                 {
                     TAClientes.FillBy1(DTClientes, txtPesquisa.Text);
                     dgvClientes.DataSource = DTClientes;
