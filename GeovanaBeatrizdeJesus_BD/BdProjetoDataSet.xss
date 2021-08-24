@@ -9,7 +9,7 @@
     <Shape ID="DesignTable:Cliente" ZOrder="2" X="103" Y="109" Height="229" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="102" />
     <Shape ID="DesignTable:Itens_Pedido" ZOrder="7" X="495" Y="385" Height="153" Width="218" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="102" />
     <Shape ID="DesignTable:Pedido" ZOrder="1" X="87" Y="415" Height="134" Width="185" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="83" />
-    <Shape ID="DesignTable:Produto" ZOrder="5" X="517" Y="109" Height="153" Width="192" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="102" />
+    <Shape ID="DesignTable:Produto" ZOrder="5" X="517" Y="109" Height="229" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="102" />
   </Shapes>
   <Connectors>
     <Connector ID="DesignRelation:Cliente_Pedido" ZOrder="6" LineWidth="11">
@@ -44,7 +44,7 @@
       <RoutePoints>
         <Point>
           <X>704</X>
-          <Y>262</Y>
+          <Y>338</Y>
         </Point>
         <Point>
           <X>704</X>
