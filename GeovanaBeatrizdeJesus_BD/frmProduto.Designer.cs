@@ -95,7 +95,7 @@
             // 
             // txtDesc
             // 
-            this.txtDesc.Location = new System.Drawing.Point(120, 106);
+            this.txtDesc.Location = new System.Drawing.Point(120, 110);
             this.txtDesc.Name = "txtDesc";
             this.txtDesc.Size = new System.Drawing.Size(430, 20);
             this.txtDesc.TabIndex = 6;
@@ -109,6 +109,7 @@
             // 
             // btnIncluirPro
             // 
+            this.btnIncluirPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIncluirPro.Location = new System.Drawing.Point(49, 201);
             this.btnIncluirPro.Name = "btnIncluirPro";
             this.btnIncluirPro.Size = new System.Drawing.Size(75, 23);
@@ -118,6 +119,7 @@
             // 
             // btnAlterarPro
             // 
+            this.btnAlterarPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlterarPro.Location = new System.Drawing.Point(164, 201);
             this.btnAlterarPro.Name = "btnAlterarPro";
             this.btnAlterarPro.Size = new System.Drawing.Size(75, 23);
@@ -127,6 +129,7 @@
             // 
             // btnExcluirPro
             // 
+            this.btnExcluirPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcluirPro.Location = new System.Drawing.Point(276, 201);
             this.btnExcluirPro.Name = "btnExcluirPro";
             this.btnExcluirPro.Size = new System.Drawing.Size(75, 23);
@@ -136,6 +139,7 @@
             // 
             // btnFecharPro
             // 
+            this.btnFecharPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFecharPro.Location = new System.Drawing.Point(475, 201);
             this.btnFecharPro.Name = "btnFecharPro";
             this.btnFecharPro.Size = new System.Drawing.Size(75, 23);
@@ -145,6 +149,7 @@
             // 
             // btnLocalizarPro
             // 
+            this.btnLocalizarPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLocalizarPro.Location = new System.Drawing.Point(254, 47);
             this.btnLocalizarPro.Name = "btnLocalizarPro";
             this.btnLocalizarPro.Size = new System.Drawing.Size(32, 23);

@@ -72,6 +72,7 @@
             // 
             // btnOKPro
             // 
+            this.btnOKPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOKPro.Location = new System.Drawing.Point(422, 349);
             this.btnOKPro.Name = "btnOKPro";
             this.btnOKPro.Size = new System.Drawing.Size(75, 23);
@@ -81,6 +82,7 @@
             // 
             // btnCancelarPro
             // 
+            this.btnCancelarPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelarPro.Location = new System.Drawing.Point(541, 349);
             this.btnCancelarPro.Name = "btnCancelarPro";
             this.btnCancelarPro.Size = new System.Drawing.Size(75, 23);
