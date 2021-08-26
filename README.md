@@ -1,6 +1,6 @@
 # Database_on_Csharp
 
-This project has been created in one of my classes at school. It has made on Visual Studio and I'm using a database.
+This project has been created in one of my classes at school. It has made on Visual Studio and I'm using a database called SQL.
 
 ## Customer survey screens:
 
