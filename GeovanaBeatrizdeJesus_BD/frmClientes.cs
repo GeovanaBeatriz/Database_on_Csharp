@@ -26,8 +26,6 @@ namespace GeovanaBeatrizdeJesus_BD
         }
 
 
-       
-
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
             frmPesquisaCliente frmPesqCli = new frmPesquisaCliente(this);// Cria uma instância do formulário 

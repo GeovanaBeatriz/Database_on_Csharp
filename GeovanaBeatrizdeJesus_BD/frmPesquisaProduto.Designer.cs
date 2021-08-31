@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rdbNomePro = new System.Windows.Forms.RadioButton();
+            this.rdbCod = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtPesquisaPro = new System.Windows.Forms.TextBox();
             this.dgvProdutos = new System.Windows.Forms.DataGridView();
             this.btnOKPro = new System.Windows.Forms.Button();
             this.btnCancelarPro = new System.Windows.Forms.Button();
-            this.rdbCod = new System.Windows.Forms.RadioButton();
-            this.rdbNomePro = new System.Windows.Forms.RadioButton();
-            this.txtPesquisaPro = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).BeginInit();
@@ -52,6 +52,28 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Critério de Busca";
             // 
+            // rdbNomePro
+            // 
+            this.rdbNomePro.AutoSize = true;
+            this.rdbNomePro.Location = new System.Drawing.Point(115, 40);
+            this.rdbNomePro.Name = "rdbNomePro";
+            this.rdbNomePro.Size = new System.Drawing.Size(53, 17);
+            this.rdbNomePro.TabIndex = 1;
+            this.rdbNomePro.TabStop = true;
+            this.rdbNomePro.Text = "Nome";
+            this.rdbNomePro.UseVisualStyleBackColor = true;
+            // 
+            // rdbCod
+            // 
+            this.rdbCod.AutoSize = true;
+            this.rdbCod.Location = new System.Drawing.Point(21, 40);
+            this.rdbCod.Name = "rdbCod";
+            this.rdbCod.Size = new System.Drawing.Size(58, 17);
+            this.rdbCod.TabIndex = 0;
+            this.rdbCod.TabStop = true;
+            this.rdbCod.Text = "Código";
+            this.rdbCod.UseVisualStyleBackColor = true;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.txtPesquisaPro);
@@ -61,6 +83,13 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Informe o Nome ou o Código do Produto";
+            // 
+            // txtPesquisaPro
+            // 
+            this.txtPesquisaPro.Location = new System.Drawing.Point(20, 37);
+            this.txtPesquisaPro.Name = "txtPesquisaPro";
+            this.txtPesquisaPro.Size = new System.Drawing.Size(291, 20);
+            this.txtPesquisaPro.TabIndex = 0;
             // 
             // dgvProdutos
             // 
@@ -90,35 +119,6 @@
             this.btnCancelarPro.Text = "Cancelar";
             this.btnCancelarPro.UseVisualStyleBackColor = true;
             // 
-            // rdbCod
-            // 
-            this.rdbCod.AutoSize = true;
-            this.rdbCod.Location = new System.Drawing.Point(21, 40);
-            this.rdbCod.Name = "rdbCod";
-            this.rdbCod.Size = new System.Drawing.Size(58, 17);
-            this.rdbCod.TabIndex = 0;
-            this.rdbCod.TabStop = true;
-            this.rdbCod.Text = "Código";
-            this.rdbCod.UseVisualStyleBackColor = true;
-            // 
-            // rdbNomePro
-            // 
-            this.rdbNomePro.AutoSize = true;
-            this.rdbNomePro.Location = new System.Drawing.Point(115, 40);
-            this.rdbNomePro.Name = "rdbNomePro";
-            this.rdbNomePro.Size = new System.Drawing.Size(53, 17);
-            this.rdbNomePro.TabIndex = 1;
-            this.rdbNomePro.TabStop = true;
-            this.rdbNomePro.Text = "Nome";
-            this.rdbNomePro.UseVisualStyleBackColor = true;
-            // 
-            // txtPesquisaPro
-            // 
-            this.txtPesquisaPro.Location = new System.Drawing.Point(20, 37);
-            this.txtPesquisaPro.Name = "txtPesquisaPro";
-            this.txtPesquisaPro.Size = new System.Drawing.Size(291, 20);
-            this.txtPesquisaPro.TabIndex = 0;
-            // 
             // frmPesquisaProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -131,6 +131,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmPesquisaProduto";
             this.Text = "Pesquisa de Produtos";
+            
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

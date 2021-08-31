@@ -12,9 +12,19 @@ namespace GeovanaBeatrizdeJesus_BD
 {
     public partial class frmPesquisaProduto : Form
     {
+
+        frmProduto frmProd;
         public frmPesquisaProduto()
         {
             InitializeComponent();
         }
+
+        public frmPesquisaProduto(frmProduto formularioProduto)
+        {
+            InitializeComponent();
+            frmProd = formularioProduto;
+        }
+
+       
     }
 }

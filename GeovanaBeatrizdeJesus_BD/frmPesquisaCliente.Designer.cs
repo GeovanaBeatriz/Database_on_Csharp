@@ -132,6 +132,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmPesquisaCliente";
             this.Text = "Pesquisa de Clientes";
+            this.Load += new System.EventHandler(this.frmPesquisaCliente_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

@@ -156,6 +156,7 @@
             this.btnLocalizarPro.TabIndex = 12;
             this.btnLocalizarPro.Text = "...";
             this.btnLocalizarPro.UseVisualStyleBackColor = true;
+            this.btnLocalizarPro.Click += new System.EventHandler(this.btnLocalizarPro_Click);
             // 
             // frmProduto
             // 
