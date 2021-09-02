@@ -90,6 +90,7 @@
             this.txtPesquisaPro.Name = "txtPesquisaPro";
             this.txtPesquisaPro.Size = new System.Drawing.Size(291, 20);
             this.txtPesquisaPro.TabIndex = 0;
+            this.txtPesquisaPro.TextChanged += new System.EventHandler(this.txtPesquisaPro_TextChanged);
             // 
             // dgvProdutos
             // 
@@ -108,6 +109,7 @@
             this.btnOKPro.TabIndex = 3;
             this.btnOKPro.Text = "OK";
             this.btnOKPro.UseVisualStyleBackColor = true;
+            this.btnOKPro.Click += new System.EventHandler(this.btnOKPro_Click);
             // 
             // btnCancelarPro
             // 
@@ -118,6 +120,7 @@
             this.btnCancelarPro.TabIndex = 4;
             this.btnCancelarPro.Text = "Cancelar";
             this.btnCancelarPro.UseVisualStyleBackColor = true;
+            this.btnCancelarPro.Click += new System.EventHandler(this.btnCancelarPro_Click);
             // 
             // frmPesquisaProduto
             // 
@@ -131,7 +134,6 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmPesquisaProduto";
             this.Text = "Pesquisa de Produtos";
-            
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

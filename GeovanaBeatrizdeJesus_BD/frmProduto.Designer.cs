@@ -116,6 +116,7 @@
             this.btnIncluirPro.TabIndex = 8;
             this.btnIncluirPro.Text = "Incluir";
             this.btnIncluirPro.UseVisualStyleBackColor = true;
+            this.btnIncluirPro.Click += new System.EventHandler(this.btnIncluirPro_Click);
             // 
             // btnAlterarPro
             // 
@@ -126,6 +127,7 @@
             this.btnAlterarPro.TabIndex = 9;
             this.btnAlterarPro.Text = "Alterar";
             this.btnAlterarPro.UseVisualStyleBackColor = true;
+            this.btnAlterarPro.Click += new System.EventHandler(this.btnAlterarPro_Click);
             // 
             // btnExcluirPro
             // 
@@ -136,6 +138,7 @@
             this.btnExcluirPro.TabIndex = 10;
             this.btnExcluirPro.Text = "Excluir";
             this.btnExcluirPro.UseVisualStyleBackColor = true;
+            this.btnExcluirPro.Click += new System.EventHandler(this.btnExcluirPro_Click);
             // 
             // btnFecharPro
             // 
@@ -146,6 +149,7 @@
             this.btnFecharPro.TabIndex = 11;
             this.btnFecharPro.Text = "Fechar";
             this.btnFecharPro.UseVisualStyleBackColor = true;
+            this.btnFecharPro.Click += new System.EventHandler(this.btnFecharPro_Click);
             // 
             // btnLocalizarPro
             // 
