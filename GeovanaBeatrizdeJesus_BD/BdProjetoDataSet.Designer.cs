@@ -2245,7 +2245,7 @@ namespace GeovanaBeatrizdeJesus_BD.BdProjetoDataSetTableAdapters {
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Cliente] ([CPF], [Nome], [Endereco], [Telefone]) VALUES (@CPF," +
                 " @Nome, @Endereco, @Telefone);\r\nSELECT CPF, Nome, Endereco, Telefone FROM Client" +
-                "e WHERE (CPF = @CPF)";
+                "e WHERE (CPF = @CPF) ORDER BY Nome";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CPF", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CPF", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Nome", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nome", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -2254,7 +2254,7 @@ namespace GeovanaBeatrizdeJesus_BD.BdProjetoDataSetTableAdapters {
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
             this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Cliente] SET [CPF] = @CPF, [Nome] = @Nome, [Endereco] = @Endereco, [Telefone] = @Telefone WHERE (([CPF] = @Original_CPF) AND ((@IsNull_Nome = 1 AND [Nome] IS NULL) OR ([Nome] = @Original_Nome)) AND ((@IsNull_Endereco = 1 AND [Endereco] IS NULL) OR ([Endereco] = @Original_Endereco)) AND ((@IsNull_Telefone = 1 AND [Telefone] IS NULL) OR ([Telefone] = @Original_Telefone)));
-SELECT CPF, Nome, Endereco, Telefone FROM Cliente WHERE (CPF = @CPF)";
+SELECT CPF, Nome, Endereco, Telefone FROM Cliente WHERE (CPF = @CPF) ORDER BY Nome";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CPF", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CPF", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Nome", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nome", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -2282,7 +2282,7 @@ SELECT CPF, Nome, Endereco, Telefone FROM Cliente WHERE (CPF = @CPF)";
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[5];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT CPF, Nome, Endereco, Telefone FROM dbo.Cliente";
+            this._commandCollection[0].CommandText = "SELECT CPF, Nome, Endereco, Telefone FROM dbo.Cliente\r\norder by Nome";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;

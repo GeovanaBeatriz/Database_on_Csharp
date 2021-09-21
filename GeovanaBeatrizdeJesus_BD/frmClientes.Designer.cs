@@ -183,6 +183,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmClientes";
             this.Text = "Cadastro de Clientes";
+            this.Load += new System.EventHandler(this.frmClientes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -44,14 +44,14 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtCodVenda = new System.Windows.Forms.TextBox();
             this.dgvVendas = new System.Windows.Forms.DataGridView();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtTotal = new System.Windows.Forms.TextBox();
-            this.btnFinalizar = new System.Windows.Forms.Button();
             this.clmCodProd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmProduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmQtde = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmValorUnit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmValorTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtTotal = new System.Windows.Forms.TextBox();
+            this.btnFinalizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVendas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,6 +80,7 @@
             this.txtCodCli.Name = "txtCodCli";
             this.txtCodCli.Size = new System.Drawing.Size(93, 20);
             this.txtCodCli.TabIndex = 2;
+            this.txtCodCli.TextChanged += new System.EventHandler(this.txtCodCli_TextChanged);
             // 
             // txtCodProduto
             // 
@@ -104,6 +105,7 @@
             this.cmbCliente.Name = "cmbCliente";
             this.cmbCliente.Size = new System.Drawing.Size(313, 21);
             this.cmbCliente.TabIndex = 5;
+            this.cmbCliente.SelectedIndexChanged += new System.EventHandler(this.cmbCliente_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -195,32 +197,6 @@
             this.dgvVendas.Size = new System.Drawing.Size(700, 189);
             this.dgvVendas.TabIndex = 15;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(510, 382);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(82, 13);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "Total da venda:";
-            // 
-            // txtTotal
-            // 
-            this.txtTotal.Location = new System.Drawing.Point(598, 379);
-            this.txtTotal.Name = "txtTotal";
-            this.txtTotal.ReadOnly = true;
-            this.txtTotal.Size = new System.Drawing.Size(142, 20);
-            this.txtTotal.TabIndex = 17;
-            // 
-            // btnFinalizar
-            // 
-            this.btnFinalizar.Location = new System.Drawing.Point(599, 405);
-            this.btnFinalizar.Name = "btnFinalizar";
-            this.btnFinalizar.Size = new System.Drawing.Size(141, 23);
-            this.btnFinalizar.TabIndex = 18;
-            this.btnFinalizar.Text = "Finalizar a venda";
-            this.btnFinalizar.UseVisualStyleBackColor = true;
-            // 
             // clmCodProd
             // 
             this.clmCodProd.HeaderText = "Código do produto";
@@ -251,6 +227,32 @@
             this.clmValorTotal.Name = "clmValorTotal";
             this.clmValorTotal.Width = 77;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(510, 382);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(82, 13);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "Total da venda:";
+            // 
+            // txtTotal
+            // 
+            this.txtTotal.Location = new System.Drawing.Point(598, 379);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.ReadOnly = true;
+            this.txtTotal.Size = new System.Drawing.Size(142, 20);
+            this.txtTotal.TabIndex = 17;
+            // 
+            // btnFinalizar
+            // 
+            this.btnFinalizar.Location = new System.Drawing.Point(599, 405);
+            this.btnFinalizar.Name = "btnFinalizar";
+            this.btnFinalizar.Size = new System.Drawing.Size(141, 23);
+            this.btnFinalizar.TabIndex = 18;
+            this.btnFinalizar.Text = "Finalizar a venda";
+            this.btnFinalizar.UseVisualStyleBackColor = true;
+            // 
             // frmVendas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -277,6 +279,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmVendas";
             this.Text = "Vendas";
+            this.Load += new System.EventHandler(this.frmVendas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVendas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
