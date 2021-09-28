@@ -88,6 +88,7 @@
             this.txtCodProduto.Name = "txtCodProduto";
             this.txtCodProduto.Size = new System.Drawing.Size(93, 20);
             this.txtCodProduto.TabIndex = 3;
+            this.txtCodProduto.TextChanged += new System.EventHandler(this.txtCodProduto_TextChanged);
             // 
             // label3
             // 
@@ -164,6 +165,7 @@
             this.btnInserir.TabIndex = 12;
             this.btnInserir.Text = "Inserir";
             this.btnInserir.UseVisualStyleBackColor = true;
+            this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
             // 
             // label7
             // 
@@ -252,6 +254,7 @@
             this.btnFinalizar.TabIndex = 18;
             this.btnFinalizar.Text = "Finalizar a venda";
             this.btnFinalizar.UseVisualStyleBackColor = true;
+            this.btnFinalizar.Click += new System.EventHandler(this.btnFinalizar_Click);
             // 
             // frmVendas
             // 
