@@ -64,7 +64,7 @@ namespace GeovanaBeatrizdeJesus_BD
             if(txtCodProduto.Text != "")
             {
                 DataRow[] Produto;
-                Produto = DTProduto.Select("Código=" + Convert.ToInt16(txtCodProduto));
+                Produto = DTProduto.Select("Codigo=" + Convert.ToInt16(txtCodProduto.Text));
 
                 if(Produto.Length > 0)
                 {

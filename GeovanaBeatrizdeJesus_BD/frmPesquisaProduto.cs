@@ -72,5 +72,10 @@ namespace GeovanaBeatrizdeJesus_BD
         {
             this.Close();
         }
+
+        private void frmPesquisaProduto_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
