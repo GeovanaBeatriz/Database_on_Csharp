@@ -49,5 +49,45 @@ namespace GeovanaBeatrizdeJesus_BD
             //principal e portanto, deverá abrir dentro dele
             frmVendas.Show(); //exibe o formulário cliente
         }
+
+        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RelatórioCliente frmRelCli = new RelatórioCliente(); //Criando instância do formulário Clientes
+            frmRelCli.MdiParent = this; //Esta linha define que o formulário cliente é 'filho' do formulário
+            //principal e portanto, deverá abrir dentro dele
+            frmRelCli.Show(); //exibe o formulário cliente
+        }
+
+        private void produtoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RelatórioProduto frmRelProd = new RelatórioProduto(); //Criando instância do formulário Clientes
+            frmRelProd.MdiParent = this; //Esta linha define que o formulário cliente é 'filho' do formulário
+            //principal e portanto, deverá abrir dentro dele
+            frmRelProd.Show(); //exibe o formulário cliente
+        }
+
+        private void vendasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            RelatórioVendas frmRelVendas = new RelatórioVendas(); //Criando instância do formulário Clientes
+            frmRelVendas.MdiParent = this; //Esta linha define que o formulário cliente é 'filho' do formulário
+            //principal e portanto, deverá abrir dentro dele
+            frmRelVendas.Show(); //exibe o formulário cliente
+        }
+
+        private void saToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja sair da aplicação?", "Sair da aplicação",
+               MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                try
+                {
+                    this.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao fechar aplicação\n" + ex.Message, "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }

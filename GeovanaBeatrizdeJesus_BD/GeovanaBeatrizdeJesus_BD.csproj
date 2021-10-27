@@ -128,6 +128,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Relatório.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatório.Designer.cs">
+      <DependentUpon>Relatório.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RelatórioProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RelatórioProduto.Designer.cs">
+      <DependentUpon>RelatórioProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RelatórioVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RelatórioVendas.Designer.cs">
+      <DependentUpon>RelatórioVendas.cs</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -159,6 +177,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Relatório.resx">
+      <DependentUpon>Relatório.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatórioProduto.resx">
+      <DependentUpon>RelatórioProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatórioVendas.resx">
+      <DependentUpon>RelatórioVendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportCli.rdlc" />
+    <EmbeddedResource Include="ReportProduto.rdlc" />
+    <EmbeddedResource Include="ReportVendas.rdlc" />
     <None Include="BdProjetoDataSet.xsc">
       <DependentUpon>BdProjetoDataSet.xsd</DependentUpon>
     </None>
